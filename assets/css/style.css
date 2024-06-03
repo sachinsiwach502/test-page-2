@@ -20,6 +20,7 @@
     --light-grey-color: #E6E6E6;
     --light-green: #9EFF00;
     --grey-200: #98989A;
+    --grey-100: #656567;
 
     --fw-3: 300;
     --fw-4: 400;
@@ -352,6 +353,10 @@
     color: var(--grey-200);
 }
 
+.grey-100 {
+    color: var(--grey-100)
+}
+
 .green {
     background: var(--light-green);
 }
@@ -624,9 +629,81 @@
 .pt_40 {
     padding-top: 40px;
 }
-.mt_40{
+
+.mt_40 {
     margin-top: 40px;
 }
+
+/*================= info section ======================*/
+.container_846 {
+    max-width: 846px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about_card {
+    padding: 60px;
+}
+
+.name {
+    padding: 20px 30px 20px 30px;
+    background: #24242480;
+    border-radius: 6px;
+    border: 1px solid #262626;
+}
+
+input[type="text"]::placeholder {
+    font-family: var(--ff-barlow);
+    font-size: var(--fs-16);
+    font-weight: var(--fw-4);
+    line-height: var(--lh-24);
+    color: var(--grey-100);
+}
+
+.select {
+    padding: 30px;
+    background: #24242480;
+    border-radius: 6px;
+    border: 1px solid #262626;
+    margin-top: 30px;
+}
+
+.budget {
+    padding: 30px;
+    background: #24242480;
+    border-radius: 6px;
+    border: 1px solid #262626;
+    margin-top: 30px;
+}
+
+.name_input {
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #262626;
+    width: 100%;
+}
+
+
+.message {
+    padding: 30px;
+    background: #24242480;
+    border-radius: 6px;
+    border: 1px solid #262626;
+    margin-top: 30px;
+}
+
+.underline {
+    width: 100%;
+    border: 1px solid #262626;
+    margin-top: 34px;
+}
+
+.mt_20 {
+    margin-top: 20px;
+}
+
 
 /*================== media screen =========================*/
 @media (max-width:992px) {
@@ -685,6 +762,10 @@
         margin-top: 50px !important;
     }
 
+    .w-sm-50 {
+        width: 50% !important;
+    }
+
 }
 
 @media (min-width:992px) {
@@ -718,5 +799,9 @@
 
     .services_btn_2 {
         margin-top: 40px !important;
+    }
+
+    .w-lg-47 {
+        width: 47% !important;
     }
 }
