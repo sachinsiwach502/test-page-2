@@ -67,6 +67,7 @@ $('.slick_slider').slick({
     autoplaySpeed: 0,
     speed: 2000,
     cssEase: 'linear',
+    dots:false,
     responsive: [
         {
             breakpoint: 1024,

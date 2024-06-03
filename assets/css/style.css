@@ -414,8 +414,9 @@
 .hero_sec_bg_img {
     background-image: url("../img/png/Hero_section_bg_img.png");
     background-position: center;
-    background-size: cover;
+    background-size: 100% 100%;
     background-repeat: no-repeat;
+
 }
 
 .max-w-550 {
@@ -473,6 +474,20 @@
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 280px;
+    position: relative;
+    z-index: 1;
+}
+
+.our_services_bg_img::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--bg-color);
+    opacity: 75%;
+    z-index: 2;
 }
 
 .pt_10 {
@@ -519,6 +534,20 @@
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 280px;
+    position: relative;
+    z-index: 1;
+}
+
+.why_choice_bg_img::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--bg-color);
+    opacity: 75%;
+    z-index: 2;
 }
 
 .max-w-780 {
@@ -540,6 +569,19 @@
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 280px;
+    position: relative;
+    z-index: 1;
+}
+.about_us_bg_img::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--bg-color);
+    opacity: 75%;
+    z-index: 2;
 }
 
 .about_us_card {
@@ -582,6 +624,19 @@
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 280px;
+    position: relative;
+    z-index: 1;
+}
+.faq_us_bg_img::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--bg-color);
+    opacity: 75%;
+    z-index: 2;
 }
 
 .acc_num_box {
@@ -631,6 +686,18 @@
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 483px;
+    position: relative; z-index: 1;
+}
+.thanks_bg_img::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background-color: var(--bg-color);
+    opacity: 75%;
+    z-index: 2;
 }
 
 .pt_40 {
