@@ -42,6 +42,7 @@
     --fs-28: 28px;
     --fs-30: 30px;
     --fs-32: 32px;
+    --fs-38: 38px;
     --fs-36: 36px;
     --fs-40: 40px;
     --fs-44: 44px;
@@ -440,6 +441,64 @@
     background: #24242433;
 }
 
+
+/*================= slick slider =================*/
+.slick_slider {
+    border-width: 0px, 1px, 1px, 1px;
+
+    background: #24242433;
+    border-style: solid;
+    padding: 30px 0px 30px 0px;
+    border-color: #262626;
+}
+
+
+/*================== our services ==================*/
+.our_services_bg_img {
+    background-image: url("../img/png/our_services_bg_img.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 280px;
+}
+
+.pt_10 {
+    padding-top: 10px;
+}
+
+.container_1280 {
+    max-width: 1280px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.services_card {
+    padding: 40px;
+    border: 2px solid #262626;
+    min-height: 100%;
+}
+
+.pt_30 {
+    padding-top: 30px;
+}
+
+.services_btn_2,
+.services_btn {
+    width: 100%;
+    min-height: 52px;
+    background-color: #262626;
+    border-radius: 6px;
+    border: 1px solid transparent;
+    transition: all 200ms linear;
+}
+
+.services_btn_2:hover,
+.services_btn:hover {
+    border: 1px solid var(--white-color);
+}
+
 /*================== media screen =========================*/
 @media (max-width:992px) {
     .menuBar {
@@ -492,6 +551,11 @@
     .lh-sm-42 {
         line-height: var(--lh-42);
     }
+
+    .services_btn {
+        margin-top: 50px !important;
+    }
+
 }
 
 @media (min-width:992px) {
@@ -504,6 +568,22 @@
     }
 
     .mt_lg_40 {
+        margin-top: 40px !important;
+    }
+
+    .lh-lg-45 {
+        line-height: var(--lh-45);
+    }
+
+    .fs-lg-38 {
+        font-size: var(--fs-38);
+    }
+
+    .services_btn {
+        margin-top: 84px !important;
+    }
+
+    .services_btn_2 {
         margin-top: 40px !important;
     }
 }
