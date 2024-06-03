@@ -59,7 +59,7 @@ navLinks.forEach(links => {
 $('.slick_slider').slick({
     dots: true,
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 6,
     slidesToScroll: 1,
     prevArrow: false,
     nextArrow: false,
@@ -71,7 +71,7 @@ $('.slick_slider').slick({
         {
             breakpoint: 1024,
             settings: {
-                slidesToShow: 3,
+                slidesToShow: 4,
                 slidesToScroll: 1,
                 infinite: true,
                 dots: false
