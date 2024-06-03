@@ -93,3 +93,63 @@ $('.slick_slider').slick({
         }
     ]
 });
+
+// accordian==================
+let clickPart = document.querySelector(".clickable_part");
+let img = document.querySelector(".accordian_img");
+let accHeading = document.querySelector(".accordian-heading");
+let num = document.querySelector(".acc_num_box");
+let hiddenTxt = document.querySelector(".hidden_txt");
+
+hiddenTxt.style.display = "block";
+num.style.color = "#9EFF00";
+img.style.transform = "rotate(90deg)";
+img.classList.add("svg_green_color");
+
+accHeading.style.color = "#9EFF00";
+
+let accItm = document.querySelectorAll(".accrodain_itm");
+accItm.forEach(e => {
+    let clickPart = e.querySelector(".clickable_part");
+    let img = e.querySelector(".accordian_img");
+    let accHeading = e.querySelector(".accordian-heading");
+    let num = e.querySelector(".acc_num_box");
+    let hiddenTxt = e.querySelector(".hidden_txt");
+    let txtDisply = window.getComputedStyle(hiddenTxt).display;
+
+    clickPart.addEventListener("click", () => {
+        accItm.forEach(j => {
+            let clickPart = j.querySelector(".clickable_part");
+            let img = j.querySelector(".accordian_img");
+            let accHeading = j.querySelector(".accordian-heading");
+            let num = j.querySelector(".acc_num_box");
+            let hiddenTxt = j.querySelector(".hidden_txt");
+            if (e !== j) {
+                hiddenTxt.style.display = "none";
+                num.style.color = "#ffffff";
+                img.style.transform = "rotate(0deg)";
+                img.classList.remove("svg_green_color");
+                accHeading.style.color = "#ffffff";
+
+            }
+        })
+
+        if (txtDisply === "none") {
+            hiddenTxt.style.display = "block";
+            num.style.color = "#9EFF00";
+            img.style.transform = "rotate(1800deg)";
+            img.classList.add("svg_green_color");
+
+            accHeading.style.color = "#9EFF00";
+
+        } else {
+            hiddenTxt.style.display = "none";
+            num.style.color = "#ffffff";
+            img.style.transform = "rotate(0deg)";
+            img.classList.remove("svg_green_color");
+
+            accHeading.style.color = "#ffffff";
+        }
+    })
+})
+

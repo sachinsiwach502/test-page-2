@@ -356,6 +356,7 @@
     background: var(--light-green);
 }
 
+
 .ff {
     font-family: var(--ff-barlow);
 }
@@ -557,8 +558,58 @@
 .web_btn:hover {
     border: 1px solid var(--white-color);
 }
-.mt_30{
+
+.mt_30 {
     margin-top: 30px;
+}
+
+/*=================== faq ==================*/
+.faq_us_bg_img {
+    background-image: url("../img/png/faq_bg_img.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 280px;
+}
+
+.acc_num_box {
+    color: var(--white-color);
+    border-radius: 6px;
+    padding: 16px;
+    border: 1px solid;
+    border-image-source: linear-gradient(180deg, #2E2E2E 0%, rgba(46, 46, 46, 0) 100%);
+    background: linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0) 100%);
+}
+
+.accordian-heading {
+    color: var(--white-color);
+}
+
+.svg_green_color svg path {
+    fill: var(--light-green);
+}
+
+.accrodain_itm {
+    padding: 30px 40px 30px 30px;
+
+}
+
+.acc_border {
+    border: 1px 0px 1px 0px;
+    border-color: #262626;
+    border-style: solid;
+}
+
+.hidden_txt {
+    display: none;
+}
+
+.accordian_cross {
+    display: none;
+}
+
+.pl-100 {
+    padding-left: 100px;
 }
 
 /*================== media screen =========================*/
@@ -623,6 +674,10 @@
 @media (min-width:992px) {
     .lh-lg-56 {
         line-height: var(--lh-56);
+    }
+
+    .pt_lg_60 {
+        padding-top: 60px !important;
     }
 
     .fs-lg-48 {
