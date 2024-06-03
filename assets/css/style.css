@@ -23,6 +23,7 @@
     --grey-100: #656567;
     --border-color: #262626;
     --bg-color: #24242480;
+    --bg-color: #1A1A1A;
 
     --fw-3: 300;
     --fw-4: 400;
@@ -372,6 +373,10 @@
     cursor: pointer;
 }
 
+.sec-bg-color {
+    background-color: var(--bg-color);
+}
+
 /*===================== nav bar ==========================*/
 .hero_container {
     max-width: 1140px;
@@ -483,7 +488,7 @@
 }
 
 .services_card {
-    padding: 40px;
+    padding: 25px;
     border: 2px solid var(--border-color);
     min-height: 100%;
 }
@@ -538,7 +543,7 @@
 }
 
 .about_us_card {
-    padding: 80px 60px 80px 60px;
+    padding: 30px 20px 30px 20px;
     border: 2px solid var(--border-color);
     min-height: 100%;
 }
@@ -803,6 +808,10 @@ input[type="text"]::placeholder {
         width: 50% !important;
     }
 
+    .about_us_card {
+        padding: 40px 30px 30px 30px !important;
+    }
+
 }
 
 @media (min-width:992px) {
@@ -840,5 +849,23 @@ input[type="text"]::placeholder {
 
     .w-lg-47 {
         width: 47% !important;
+    }
+
+    .about_us_card {
+        padding: 70px 50px 70px 50px !important;
+    }
+
+    .services_card {
+        padding: 30px;
+    }
+}
+
+@media (min-width:1200px) {
+    .about_us_card {
+        padding: 80px 60px 80px 60px;
+    }
+
+    .services_card {
+        padding: 40px;
     }
 }
