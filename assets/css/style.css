@@ -612,6 +612,22 @@
     padding-left: 100px;
 }
 
+/*================= thanks section =================*/
+.thanks_bg_img {
+    background-image: url("../img/png/faq_bg_img.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 483px;
+}
+
+.pt_40 {
+    padding-top: 40px;
+}
+.mt_40{
+    margin-top: 40px;
+}
+
 /*================== media screen =========================*/
 @media (max-width:992px) {
     .menuBar {
