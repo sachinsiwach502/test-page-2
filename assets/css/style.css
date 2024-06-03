@@ -706,6 +706,29 @@ input[type="text"]::placeholder {
     margin-top: 20px;
 }
 
+/* footer================ */
+.border_top {
+    border-top: 1px solid var(--border-color);
+}
+
+.gap_20 {
+    gap: 20px;
+}
+
+.gap_68 {
+    gap: 68px;
+}
+
+.contact_us {
+    background: linear-gradient(180deg, #242424 0%, rgba(36, 36, 36, 0) 100%);
+    border: 1px solid var(--border-color);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.pt_40 {
+    padding-top: 40px;
+}
 
 /*================== media screen =========================*/
 @media (max-width:992px) {
