@@ -499,6 +499,25 @@
     border: 1px solid var(--white-color);
 }
 
+/*==================== why choice us  =====================*/
+.why_choice_bg_img {
+    background-image: url("../img/png/why_choice_us.png");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 280px;
+}
+
+.max-w-780 {
+    max-width: 780px;
+}
+
+.choice_us_card {
+    padding: 60px;
+    border: 2px solid #262626;
+    min-height: 100%;
+}
+
 /*================== media screen =========================*/
 @media (max-width:992px) {
     .menuBar {
