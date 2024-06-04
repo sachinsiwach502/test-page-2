@@ -415,8 +415,9 @@
 .hero_sec_bg_img {
     background-image: url("../img/png/Hero_section_bg_img.png");
     background-position: center;
-    background-size: 100% 100%;
+    background-size: cover;
     background-repeat: no-repeat;
+    max-width: 1280px;
 }
 
 .max-w-550 {
@@ -437,6 +438,7 @@
     padding: 8px 10px 8px 10px;
     border-radius: 6px;
     background: var(--border-color);
+    cursor: pointer;
 }
 
 .gap_6 {
@@ -662,10 +664,14 @@
 }
 
 .acc_border {
-    border: 1px 0px 1px 0px;
+    border-top: 1px;
     border-color: var(--border-color);
     border-style: solid;
 }
+
+/* .border-end-1px {
+    border-left: 1px solid var(--border-color);
+} */
 
 .hidden_txt {
     display: none;
