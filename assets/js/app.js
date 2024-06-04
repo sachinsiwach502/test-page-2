@@ -67,7 +67,7 @@ $('.slick_slider').slick({
     autoplaySpeed: 0,
     speed: 2000,
     cssEase: 'linear',
-    dots:false,
+    dots: false,
     responsive: [
         {
             breakpoint: 1024,
@@ -151,6 +151,25 @@ accItm.forEach(e => {
 
             accHeading.style.color = "#ffffff";
         }
+    });
+});
+
+// // scroll to top-----------------
+
+let scroll_top = document.querySelector(".scroll_to_top");
+let scrol_pt = 200;
+scroll_top.style.display = "none";
+window.addEventListener("scroll", () => {
+    if (window.scrollY > scrol_pt) {
+        scroll_top.style.display = "block"
+    } else {
+        scroll_top.style.display = "none";
+    }
+});
+
+scroll_top.addEventListener("click", () => {
+    window.scrollTo({
+        top: 0, behaviour: "smooth",
     })
-})
+});
 

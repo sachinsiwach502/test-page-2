@@ -386,6 +386,8 @@
     transition: all 200ms linear;
 }
 
+
+
 .nav_bttn:hover {
     border: 1px solid var(--light-green);
     color: var(--light-green);
@@ -805,11 +807,103 @@ input[type="text"]::placeholder {
     margin-bottom: 40px;
 }
 
+.footer_bottom_line2 {
+    background-color: var(--border-color);
+    height: 1px;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
 .gap_22 {
     gap: 22px;
 }
 
 
+/*=============== custom checkbox =================*/
+.form-group {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.form-group label {
+    position: relative;
+    cursor: pointer;
+}
+
+.form-group label:before {
+    content: '';
+    -webkit-appearance: none;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #333333;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.form-group input:checked+label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 9px;
+    width: 6px;
+    height: 14px;
+    border: solid var(--light-green);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+/*================= .scroll_to_top ================*/
+.scroll_to_top {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 2%;
+    right: 2%;
+    cursor: pointer;
+    z-index: 30;
+    animation: toTop 1s infinite;
+    transition: all 300ms linear;
+    animation: top 2s infinite;
+}
+
+.scroll_to_top:hover {
+    animation: top 1s infinite;
+}
+
+/*============== animation ============*/
+@keyframes top {
+    25% {
+        transform: translateY(10px);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    75% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: translateY(0p);
+    }
+}
 
 /*================== media screen =========================*/
 @media (max-width:992px) {
@@ -886,6 +980,10 @@ input[type="text"]::placeholder {
         line-height: var(--lh-56);
     }
 
+    .gap_lg_68 {
+        gap: 68px;
+    }
+
     .pt_lg_60 {
         padding-top: 60px !important;
     }
@@ -929,6 +1027,10 @@ input[type="text"]::placeholder {
     .about_card {
         padding: 60px !important;
     }
+
+    .mb_lg_60 {
+        margin-bottom: 60px !important;
+    }
 }
 
 @media (min-width:1200px) {
@@ -941,49 +1043,8 @@ input[type="text"]::placeholder {
     }
 }
 
-
-.form-group {
-    display: block;
-    margin-bottom: 15px;
-}
-
-.form-group input {
-    padding: 0;
-    height: initial;
-    width: initial;
-    margin-bottom: 0;
-    display: none;
-    cursor: pointer;
-}
-
-.form-group label {
-    position: relative;
-    cursor: pointer;
-}
-
-.form-group label:before {
-    content: '';
-    -webkit-appearance: none;
-    border-radius: 4px;
-    background-color: transparent;
-    border: 1px solid #333333;
-    padding: 10px;
-    display: inline-block;
-    position: relative;
-    vertical-align: middle;
-    cursor: pointer;
-    margin-right: 5px;
-}
-
-.form-group input:checked+label:after {
-    content: '';
-    display: block;
-    position: absolute;
-    top: 5px;
-    left: 9px;
-    width: 6px;
-    height: 14px;
-    border: solid var(--light-green);
-    border-width: 0 2px 2px 0;
-    transform: rotate(45deg);
+@media (max-width:576px) {
+    .overflow-md-auto {
+        overflow: auto;
+    }
 }
