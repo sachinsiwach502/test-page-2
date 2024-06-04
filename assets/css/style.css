@@ -386,7 +386,14 @@
     transition: all 200ms linear;
 }
 
+.nav_links {
+    transition: all 300ms linear;
+}
 
+.nav_links:hover {
+    color: var(--light-green);
+    -webkit-text-stroke: thin;
+}
 
 .nav_bttn:hover {
     border: 1px solid var(--light-green);
@@ -497,7 +504,7 @@
 
 .services_card {
     padding: 25px;
-    border: 2px solid var(--border-color);
+    border: 1px solid var(--border-color);
     min-height: 100%;
 }
 
@@ -548,8 +555,8 @@
 }
 
 .choice_us_card {
-    padding: 60px;
-    border: 2px solid var(--border-color);
+    padding: 25px;
+    border: 1px solid var(--border-color);
     min-height: 100%;
 }
 
@@ -587,13 +594,11 @@
 .profile_card {
     border: 1px solid var(--border-color);
     background: #24242433;
-    padding: 14px;
+    padding: 7px;
     border-radius: 6px;
 }
 
-.pl_12 {
-    padding-left: 12px;
-}
+
 
 .web_btn {
     padding: 14px 16px 14px 16px;
@@ -670,9 +675,7 @@
     display: none;
 }
 
-.pl-100 {
-    padding-left: 100px;
-}
+
 
 /*================= thanks section =================*/
 .thanks_bg_img {
@@ -817,6 +820,37 @@ input[type="text"]::placeholder {
 
 .gap_22 {
     gap: 22px;
+}
+
+.footer_links {
+    transition: all 300ms linear;
+}
+
+.footer_links:hover {
+    color: var(--light-green);
+    -webkit-text-stroke: thin;
+}
+
+.median_app {
+    transition: all 300ms linear;
+}
+
+.median_app:hover {
+    transform: scale(1.1);
+}
+
+.container_1440 {
+    max-width: 1440px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid var(--border-color);
+}
+
+.border-left-right {
+    border-left: 1px solid var(--border-color);
+    border-right: 1px solid var(--border-color);
 }
 
 
@@ -973,6 +1007,22 @@ input[type="text"]::placeholder {
     .about_card {
         padding: 40px;
     }
+
+    .profile_card {
+        padding: 10px;
+    }
+
+    .web_btn {
+        padding: 10px 12px 10px 12px !important;
+    }
+
+    .pl-100 {
+        padding-left: 100px;
+    }
+
+    .choice_us_card {
+        padding: 40px !important;
+    }
 }
 
 @media (min-width:992px) {
@@ -1031,7 +1081,24 @@ input[type="text"]::placeholder {
     .mb_lg_60 {
         margin-bottom: 60px !important;
     }
+
+    .profile_card {
+        padding: 14px !important;
+    }
+
+    .web_btn {
+        padding: 14px 16px 14px 16px !important;
+    }
+
+    .pl_12 {
+        padding-left: 12px;
+    }
+
+    .choice_us_card {
+        padding: 60px !important;
+    }
 }
+
 
 @media (min-width:1200px) {
     .about_us_card {

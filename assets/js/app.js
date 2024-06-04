@@ -88,7 +88,7 @@ $('.slick_slider').slick({
         {
             breakpoint: 480,
             settings: {
-                slidesToShow: 1,
+                slidesToShow: 2,
                 slidesToScroll: 1
             }
         }
@@ -104,7 +104,7 @@ let hiddenTxt = document.querySelector(".hidden_txt");
 
 hiddenTxt.style.display = "block";
 num.style.color = "#9EFF00";
-img.style.transform = "rotate(90deg)";
+img.style.transform = "rotate(45deg)";
 img.classList.add("svg_green_color");
 
 accHeading.style.color = "#9EFF00";
@@ -138,7 +138,7 @@ accItm.forEach(e => {
         if (txtDisply === "none") {
             hiddenTxt.style.display = "block";
             num.style.color = "#9EFF00";
-            img.style.transform = "rotate(1800deg)";
+            img.style.transform = "rotate(45deg)";
             img.classList.add("svg_green_color");
 
             accHeading.style.color = "#9EFF00";
