@@ -173,3 +173,10 @@ scroll_top.addEventListener("click", () => {
     })
 });
 
+
+// preloader---------------------
+let preloader = document.querySelector(".preloader");
+preloader.classList.add("d-flex");
+setTimeout(() => {
+    preloader.classList.add("d-none");
+}, 3000);
