@@ -26,6 +26,7 @@
     --bg-body-color: #1A1A1A;
     --sec-bg-color: #24242433;
     --black-100: #333333;
+    --card-bg-color:#1F1F1F;
 
     --fw-3: 300;
     --fw-4: 400;
@@ -767,7 +768,7 @@
 
 .name {
     padding: 20px 30px 20px 30px;
-    background: var(--bg-body-color);
+    background: var(--card-bg-color);
     border-radius: 6px;
     border: 1px solid var(--border-color);
 }
@@ -814,7 +815,7 @@ input[type="text"]::placeholder {
 
 .select {
     padding: 30px;
-    background: var(--bg-body-color);
+    background: var(--card-bg-color);
     border-radius: 6px;
     border: 1px solid var(--border-color);
     margin-top: 30px;
@@ -822,7 +823,7 @@ input[type="text"]::placeholder {
 
 .budget {
     padding: 30px;
-    background: var(--bg-body-color);
+    background: var(--card-bg-color);
     border-radius: 6px;
     border: 1px solid var(--border-color);
     margin-top: 30px;
@@ -838,7 +839,7 @@ input[type="text"]::placeholder {
 
 .message {
     padding: 30px;
-    background: var(--bg-body-color);
+    background: var(--card-bg-color);
     border-radius: 6px;
     border: 1px solid var(--border-color);
     margin-top: 30px;
