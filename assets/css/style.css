@@ -23,7 +23,7 @@
     --grey-100: #656567;
     --border-color: #262626;
     --bg-color: #24242480;
-    --bg-color: #1A1A1A;
+    --bg-body-color: #1A1A1A;
 
     --fw-3: 300;
     --fw-4: 400;
@@ -374,18 +374,10 @@
 }
 
 .sec-bg-color {
-    background-color: var(--bg-color);
+    background-color: var(--bg-body-color);
 }
 
 /*===================== nav bar ==========================*/
-.hero_container {
-    max-width: 1140px;
-    padding-left: 12px;
-    padding-right: 12px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .nav_bttn {
     padding: 12px 18px 12px 18px;
     border-radius: 6px;
@@ -416,7 +408,6 @@
     background-position: center;
     background-size: 100% 100%;
     background-repeat: no-repeat;
-
 }
 
 .max-w-550 {
@@ -485,7 +476,7 @@
     left: 0;
     top: 0;
     bottom: 0;
-    background-color: var(--bg-color);
+    background-color: var(--bg-body-color);
     opacity: 75%;
     z-index: 2;
 }
@@ -545,7 +536,7 @@
     left: 0;
     top: 0;
     bottom: 0;
-    background-color: var(--bg-color);
+    background-color: var(--bg-body-color);
     opacity: 75%;
     z-index: 2;
 }
@@ -572,6 +563,7 @@
     position: relative;
     z-index: 1;
 }
+
 .about_us_bg_img::after {
     position: absolute;
     content: "";
@@ -579,7 +571,7 @@
     left: 0;
     top: 0;
     bottom: 0;
-    background-color: var(--bg-color);
+    background-color: var(--bg-body-color);
     opacity: 75%;
     z-index: 2;
 }
@@ -627,6 +619,7 @@
     position: relative;
     z-index: 1;
 }
+
 .faq_us_bg_img::after {
     position: absolute;
     content: "";
@@ -634,7 +627,7 @@
     left: 0;
     top: 0;
     bottom: 0;
-    background-color: var(--bg-color);
+    background-color: var(--bg-body-color);
     opacity: 75%;
     z-index: 2;
 }
@@ -686,8 +679,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 483px;
-    position: relative; z-index: 1;
+    position: relative;
+    z-index: 1;
 }
+
 .thanks_bg_img::after {
     position: absolute;
     content: "";
@@ -695,7 +690,7 @@
     left: 0;
     top: 0;
     bottom: 0;
-    background-color: var(--bg-color);
+    background-color: var(--bg-body-color);
     opacity: 75%;
     z-index: 2;
 }
@@ -718,12 +713,12 @@
 }
 
 .about_card {
-    padding: 60px;
+    padding: 25px;
 }
 
 .name {
     padding: 20px 30px 20px 30px;
-    background: var(--bg-color);
+    background: var(--bg-body-color);
     border-radius: 6px;
     border: 1px solid var(--border-color);
 }
@@ -738,7 +733,7 @@ input[type="text"]::placeholder {
 
 .select {
     padding: 30px;
-    background: var(--bg-color);
+    background: var(--bg-body-color);
     border-radius: 6px;
     border: 1px solid var(--border-color);
     margin-top: 30px;
@@ -746,7 +741,7 @@ input[type="text"]::placeholder {
 
 .budget {
     padding: 30px;
-    background: var(--bg-color);
+    background: var(--bg-body-color);
     border-radius: 6px;
     border: 1px solid var(--border-color);
     margin-top: 30px;
@@ -762,7 +757,7 @@ input[type="text"]::placeholder {
 
 .message {
     padding: 30px;
-    background: var(--bg-color);
+    background: var(--bg-body-color);
     border-radius: 6px;
     border: 1px solid var(--border-color);
     margin-top: 30px;
@@ -813,6 +808,8 @@ input[type="text"]::placeholder {
 .gap_22 {
     gap: 22px;
 }
+
+
 
 /*================== media screen =========================*/
 @media (max-width:992px) {
@@ -879,6 +876,9 @@ input[type="text"]::placeholder {
         padding: 40px 30px 30px 30px !important;
     }
 
+    .about_card {
+        padding: 40px;
+    }
 }
 
 @media (min-width:992px) {
@@ -925,6 +925,10 @@ input[type="text"]::placeholder {
     .services_card {
         padding: 30px;
     }
+
+    .about_card {
+        padding: 60px !important;
+    }
 }
 
 @media (min-width:1200px) {
@@ -935,4 +939,51 @@ input[type="text"]::placeholder {
     .services_card {
         padding: 40px;
     }
+}
+
+
+.form-group {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    padding: 0;
+    height: initial;
+    width: initial;
+    margin-bottom: 0;
+    display: none;
+    cursor: pointer;
+}
+
+.form-group label {
+    position: relative;
+    cursor: pointer;
+}
+
+.form-group label:before {
+    content: '';
+    -webkit-appearance: none;
+    border-radius: 4px;
+    background-color: transparent;
+    border: 1px solid #333333;
+    padding: 10px;
+    display: inline-block;
+    position: relative;
+    vertical-align: middle;
+    cursor: pointer;
+    margin-right: 5px;
+}
+
+.form-group input:checked+label:after {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 5px;
+    left: 9px;
+    width: 6px;
+    height: 14px;
+    border: solid var(--light-green);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
 }
